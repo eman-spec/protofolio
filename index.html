@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Soleeman Firdaus Ode - Mahasiswa Teknik Informatika yang berfokus pada Software Development, Web Development, Database, dan UI/UX Design." />
+  <meta name="keywords" content="Soleeman Firdaus Ode, Teknik Informatika, Web Developer, Software Developer, Nusaputra, Portfolio" />
+  <meta name="author" content="Soleeman Firdaus Ode" />
+  <meta property="og:title" content="Soleeman Firdaus Ode | Portfolio" />
+  <meta property="og:description" content="Mahasiswa Teknik Informatika - Software & Web Developer" />
+  <meta property="og:type" content="website" />
+  <title>Soleeman Firdaus Ode | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode" id="body">
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">init.sh</span>
+        </div>
+        <div class="terminal-body">
+          <p class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">Initializing portfolio...</span></p>
+          <p class="t-line delay-1"><span class="t-prompt">$ </span><span class="t-cmd">Loading modules...</span></p>
+          <p class="t-line delay-2"><span class="t-prompt">$ </span><span class="t-cmd">Setting up environment...</span></p>
+          <p class="t-line delay-3"><span class="t-prompt">✔ </span><span class="t-cmd t-success">Ready! Welcome 🚀</span></p>
+        </div>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Home">
+        <span class="logo-bracket">&lt;</span>SFO<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#whatido" class="nav-link">What I Do</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero" aria-label="Hero section">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-particles" id="particles" aria-hidden="true"></div>
+    <div class="floating-codes" aria-hidden="true">
+      <span class="fc fc1">&lt;div&gt;</span>
+      <span class="fc fc2">const x = () =&gt; {}</span>
+      <span class="fc fc3">import React</span>
+      <span class="fc fc4">SELECT * FROM</span>
+      <span class="fc fc5">npm install</span>
+      <span class="fc fc6">git commit</span>
+      <span class="fc fc7">.map(() =&gt;)</span>
+      <span class="fc fc8">async/await</span>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text reveal">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Available for Collaboration</span>
+        </div>
+        <h1 class="hero-greeting">Hi, I'm <span class="hero-name">Soleeman</span> 👋</h1>
+        <div class="hero-typing-wrap">
+          <span class="hero-typing-prefix">I'm a </span>
+          <span class="hero-typing" id="typingText" aria-live="polite"></span>
+          <span class="cursor-blink" aria-hidden="true">|</span>
+        </div>
+        <p class="hero-desc">
+          Saya adalah mahasiswa Teknik Informatika yang tertarik pada pengembangan perangkat lunak, web development, database, dan teknologi digital.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            Lihat Project
+          </a>
+          <a href="#" class="btn btn-secondary" download aria-label="Download CV">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Hubungi Saya
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/eman-spec" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://instagram.com/odeyytz_" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/odeyytz_" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:pandueman7@gmail.com" class="social-icon" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="code-terminal">
+          <div class="terminal-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">soleeman.js</span>
+          </div>
+          <div class="terminal-code">
+            <div class="code-line"><span class="c-key">const</span> <span class="c-var">developer</span> = {</div>
+            <div class="code-line indent"><span class="c-prop">name</span>: <span class="c-str">"Soleeman Firdaus Ode"</span>,</div>
+            <div class="code-line indent"><span class="c-prop">role</span>: <span class="c-str">"IT Student"</span>,</div>
+            <div class="code-line indent"><span class="c-prop">campus</span>: <span class="c-str">"Nusaputra"</span>,</div>
+            <div class="code-line indent"><span class="c-prop">focus</span>: [</div>
+            <div class="code-line indent2"><span class="c-str">"Software Dev"</span>,</div>
+            <div class="code-line indent2"><span class="c-str">"Web Dev"</span>,</div>
+            <div class="code-line indent2"><span class="c-str">"Database"</span>,</div>
+            <div class="code-line indent2"><span class="c-str">"UI/UX"</span></div>
+            <div class="code-line indent">],</div>
+            <div class="code-line indent"><span class="c-prop">openToWork</span>: <span class="c-bool">true</span>,</div>
+            <div class="code-line indent"><span class="c-prop">coffee</span>: <span class="c-num">Infinity</span> <span class="c-comment">// coffee</span></div>
+            <div class="code-line">};</div>
+            <div class="code-line mt">&nbsp;</div>
+            <div class="code-line"><span class="c-fn">console</span>.<span class="c-method">log</span>(<span class="c-str">"Let's build something!"</span>);</div>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">inf</span>
+            <span class="stat-label">Passion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section" aria-label="About me">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// about_me.md</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Getting to know the developer behind the code</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap reveal">
+          <div class="about-avatar">
+            <div class="avatar-ring ring1"></div>
+            <div class="avatar-ring ring2"></div>
+            <div class="avatar-core">
+              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="50" cy="35" r="20" fill="url(#avatarGrad)"/>
+                <ellipse cx="50" cy="80" rx="32" ry="20" fill="url(#avatarGrad)"/>
+                <defs>
+                  <linearGradient id="avatarGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#6366f1"/>
+                    <stop offset="100%" stop-color="#22d3ee"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="avatar-badge-wrap">
+                <span class="avatar-badge">IT Student</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-info-cards">
+            <div class="info-card">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>pandueman7@gmail.com</span>
+            </div>
+            <div class="info-card">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Universitas Nusaputra</span>
+            </div>
+            <div class="info-card">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              <span>Teknik Informatika</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <div class="about-intro">
+            <p class="about-text">
+              Halo! Saya <strong>Soleeman Firdaus Ode</strong>, seorang mahasiswa Teknik Informatika di Universitas Nusaputra. Saya sangat menyukai dunia teknologi, terutama dalam membangun aplikasi yang berguna dan memiliki tampilan yang menarik.
+            </p>
+            <p class="about-text">
+              Perjalanan saya di dunia IT dimulai dengan rasa penasaran yang besar terhadap cara kerja software dan website. Seiring waktu, keingintahuan itu berkembang menjadi passion yang mendorong saya untuk terus belajar dan bereksperimen dengan berbagai teknologi.
+            </p>
+            <p class="about-text">
+              Saat ini saya sedang mengembangkan kemampuan saya di berbagai bidang dan sangat terbuka untuk kolaborasi, proyek, maupun kesempatan belajar baru.
+            </p>
+          </div>
+          <div class="about-areas">
+            <h3 class="about-areas-title">Yang saya pelajari &amp; kembangkan:</h3>
+            <div class="areas-grid">
+              <div class="area-item"><span class="area-icon">&#128187;</span><span>Programming</span></div>
+              <div class="area-item"><span class="area-icon">&#127760;</span><span>Web Development</span></div>
+              <div class="area-item"><span class="area-icon">&#128451;</span><span>Database</span></div>
+              <div class="area-item"><span class="area-icon">&#128311;</span><span>OOP</span></div>
+              <div class="area-item"><span class="area-icon">&#127912;</span><span>UI/UX</span></div>
+              <div class="area-item"><span class="area-icon">&#9881;</span><span>Software Dev</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt" aria-label="Skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// skills.json</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+      <div class="skills-container">
+        <div class="skills-group reveal">
+          <div class="skills-group-header">
+            <div class="skills-group-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon java">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.981.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639"/></svg>
+              </div>
+              <span class="skill-name">Java</span>
+              <div class="skill-level-dots">
+                <span class="dot-level active"></span><span class="dot-level active"></span><span class="dot-level active"></span><span class="dot-level"></span><span class="dot-level"></span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon js">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+              </div>
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-level-dots">
+                <span class="dot-level active"></span><span class="dot-level active"></span><span class="dot-level active"></span><span class="dot-level"></span><span class="dot-level"></span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon py">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.31.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.83l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.23l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05L0 11.97l.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.24l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05 1.07.13zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.26-.31.23-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01.21.03zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>
+              </div>
+              <span class="skill-name">Python</span>
+              <div class="skill-level-dots">
+                <span class="dot-level active"></span><span class="dot-level active"></span><span class="dot-level"></span><span class="dot-level"></span><span class="dot-level"></span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon sql">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <span class="skill-name">SQL</span>
+              <div class="skill-level-dots">
+                <span class="dot-level active"></span><span class="dot-level active"></span><span class="dot-level active"></span><span class="dot-level"></span><span class="dot-level"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-group reveal">
+          <div class="skills-group-header">
+            <div class="skills-group-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <h3>Tools &amp; Technologies</h3>
+          </div>
+          <div class="skills-grid tools-grid">
+            <div class="skill-card tool-card"><div class="skill-icon html"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg></div><span class="skill-name">HTML</span></div>
+            <div class="skill-card tool-card"><div class="skill-icon css"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg></div><span class="skill-name">CSS</span></div>
+            <div class="skill-card tool-card"><div class="skill-icon node"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603v10.15c0,0.659-0.354,1.275-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z"/></svg></div><span class="skill-name">Node.js</span></div>
+            <div class="skill-card tool-card"><div class="skill-icon express"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.138-.68zm1.128-.5h9.405c-.052-3.023-2.018-5.026-4.52-4.992-2.75.058-4.795 2.016-4.885 4.992z"/></svg></div><span class="skill-name">Express.js</span></div>
+            <div class="skill-card tool-card"><div class="skill-icon mysql"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.127-.04-.067-.126-.1-.18-.164zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08h-2.724c.055 1.37.39 2.075 1.005 2.075.54 0 .896-.173 1.065-.518l.856.62c-.404.6-1.007.9-1.81.9-.85 0-1.508-.274-1.972-.823-.465-.548-.696-1.32-.696-2.31 0-.966.248-1.738.745-2.32.497-.58 1.112-.87 1.846-.87.745 0 1.32.267 1.724.8.404.534.606 1.25.606 2.15l-.67.296zm6.155 4.08H14.84l-1.817-3.884h-.012l.012 3.885h-.96v-5.533h1.16l1.805 3.846h.012l-.012-3.845h.96zm4.24-4.47c-.08.547-.284 1.026-.615 1.436-.27.34-.6.62-.992.84-.4.22-.84.34-1.314.34-.475 0-.908-.107-1.3-.32-.39-.214-.693-.506-.907-.876-.215-.37-.322-.79-.322-1.26 0-.51.118-.966.355-1.374.236-.406.558-.726.965-.957.406-.23.862-.345 1.366-.345.488 0 .933.104 1.334.312.4.208.715.493.945.856.23.363.345.784.345 1.264 0 .033-.002.066-.005.084zm-1.19-.09c-.02-.356-.112-.667-.278-.932-.165-.265-.434-.4-.806-.4-.273 0-.496.094-.67.28-.175.188-.285.425-.33.715-.047.29-.07.527-.07.71 0 .268.035.514.104.737.07.222.182.398.333.527.15.13.34.195.572.195.36 0 .61-.128.75-.382.14-.254.21-.585.21-.993l-.015-.457z"/></svg></div><span class="skill-name">MySQL</span></div>
+            <div class="skill-card tool-card"><div class="skill-icon git"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.608-.406-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg></div><span class="skill-name">Git</span></div>
+            <div class="skill-card tool-card"><div class="skill-icon github-sk"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></div><span class="skill-name">GitHub</span></div>
+            <div class="skill-card tool-card"><div class="skill-icon figma"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.354-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.019 3.019 3.019h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.026-4.49 4.515-4.49c2.489 0 4.515 2.014 4.515 4.49S10.661 24 8.172 24zm0-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.019 3.019 3.019c1.665 0 3.019-1.355 3.019-3.019s-1.354-3.019-3.019-3.019zm7.703 7.509c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49c2.476 0 4.49 2.014 4.49 4.49S18.351 24 15.875 24zm0-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.019 3.019 3.019c1.665 0 3.019-1.355 3.019-3.019s-1.354-3.019-3.019-3.019z"/></svg></div><span class="skill-name">Figma</span></div>
+            <div class="skill-card tool-card"><div class="skill-icon vscode"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/></svg></div><span class="skill-name">VS Code</span></div>
+            <div class="skill-card tool-card"><div class="skill-icon xampp"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="m7 9 5 3 5-3"/><path d="M7 12v3"/><path d="M17 12v3"/></svg></div><span class="skill-name">XAMPP</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section" aria-label="Projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// projects.config</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Things I've built while learning and exploring</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal" tabindex="0" aria-label="Project: Sistem Klinik Sederhana">
+          <div class="project-preview">
+            <div class="project-preview-bg p1">
+              <div class="preview-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></div>
+              <div class="preview-tags-floating"><span>Java Swing</span><span>MySQL</span></div>
+            </div>
+            <div class="project-overlay"><span class="project-type-badge">Desktop App</span></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Sistem Klinik Sederhana</h3>
+            <p class="project-desc">Aplikasi desktop berbasis Java Swing dan MySQL untuk mengelola data pasien, dokter, transaksi, dan laporan.</p>
+            <div class="project-tech"><span class="tech-badge">Java</span><span class="tech-badge">Java Swing</span><span class="tech-badge">MySQL</span><span class="tech-badge">JDBC</span></div>
+            <div class="project-links">
+              <a href="https://github.com/eman-spec" target="_blank" rel="noopener noreferrer" class="project-btn github-btn" aria-label="View on GitHub"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>GitHub</a>
+              <span class="project-btn demo-btn disabled" title="Demo tidak tersedia"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Live Demo</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal featured" tabindex="0" aria-label="Project: Movixa">
+          <div class="project-preview">
+            <div class="project-preview-bg p2">
+              <div class="preview-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg></div>
+              <div class="preview-tags-floating"><span>Node.js</span><span>REST API</span></div>
+            </div>
+            <div class="project-overlay"><span class="project-type-badge featured-badge">Web App</span></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Movixa</h3>
+            <p class="project-desc">Aplikasi web berbasis Node.js yang memanfaatkan API film untuk menampilkan dan mencari informasi film secara dinamis.</p>
+            <div class="project-tech"><span class="tech-badge">Node.js</span><span class="tech-badge">Express.js</span><span class="tech-badge">JavaScript</span><span class="tech-badge">REST API</span></div>
+            <div class="project-links">
+              <a href="https://github.com/eman-spec" target="_blank" rel="noopener noreferrer" class="project-btn github-btn" aria-label="View on GitHub"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>GitHub</a>
+              <span class="project-btn demo-btn disabled" title="Demo tidak tersedia"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Live Demo</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal" tabindex="0" aria-label="Project: Smart Waste Manager">
+          <div class="project-preview">
+            <div class="project-preview-bg p3">
+              <div class="preview-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <div class="preview-tags-floating"><span>Figma</span><span>UI/UX</span></div>
+            </div>
+            <div class="project-overlay"><span class="project-type-badge">UI/UX Design</span></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Smart Waste Manager</h3>
+            <p class="project-desc">Konsep aplikasi untuk membantu pengguna mengatur jadwal pengelolaan sampah, mendapatkan notifikasi, mengumpulkan poin, dan berinteraksi dengan komunitas.</p>
+            <div class="project-tech"><span class="tech-badge">UI/UX</span><span class="tech-badge">Figma</span><span class="tech-badge">Mobile Design</span></div>
+            <div class="project-links">
+              <span class="project-btn github-btn disabled" title="Belum tersedia"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>GitHub</span>
+              <span class="project-btn demo-btn disabled"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Figma Preview</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal" tabindex="0" aria-label="Project: Anime Face Dataset / AI Project">
+          <div class="project-preview">
+            <div class="project-preview-bg p4">
+              <div class="preview-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5 2.5 2.5 0 0 0 7.5 18 2.5 2.5 0 0 0 10 15.5 2.5 2.5 0 0 0 7.5 13m9 0A2.5 2.5 0 0 0 14 15.5a2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 16.5 13z"/></svg></div>
+              <div class="preview-tags-floating"><span>Python</span><span>TensorFlow</span></div>
+            </div>
+            <div class="project-overlay"><span class="project-type-badge">AI / ML</span></div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-name">Anime Face Dataset / AI</h3>
+            <p class="project-desc">Project eksplorasi pengolahan dataset gambar menggunakan Python dan TensorFlow untuk kebutuhan pembelajaran Artificial Intelligence.</p>
+            <div class="project-tech"><span class="tech-badge">Python</span><span class="tech-badge">TensorFlow</span><span class="tech-badge">NumPy</span><span class="tech-badge">PIL</span><span class="tech-badge">Colab</span></div>
+            <div class="project-links">
+              <a href="https://github.com/eman-spec" target="_blank" rel="noopener noreferrer" class="project-btn github-btn" aria-label="View on GitHub"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>GitHub</a>
+              <a href="https://colab.research.google.com" target="_blank" rel="noopener noreferrer" class="project-btn demo-btn" aria-label="Open in Colab"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>View Colab</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section section-alt" aria-label="Education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// education.yml</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+        <p class="section-subtitle">Academic journey and foundations</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+              <div><h3 class="timeline-title">Teknik Informatika</h3><span class="timeline-org">Universitas Nusaputra</span></div>
+              <span class="timeline-year">2024 – Sekarang</span>
+            </div>
+            <p class="timeline-desc">Belajar dan mengembangkan kemampuan dalam pemrograman, basis data, rekayasa perangkat lunak, kecerdasan buatan, sistem operasi, UI/UX, dan teknologi informasi.</p>
+            <div class="timeline-tags"><span>Programming</span><span>Database</span><span>Software Engineering</span><span>AI</span><span>UI/UX</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Do Section -->
+  <section id="whatido" class="section" aria-label="What I do">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// services.array</span>
+        <h2 class="section-title">What I <span class="gradient-text">Do</span></h2>
+        <p class="section-subtitle">Fields I'm passionate about and developing in</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal" tabindex="0">
+          <div class="service-icon-wrap web-dev-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3 class="service-name">Web Development</h3>
+          <p class="service-desc">Membangun aplikasi web responsif dan interaktif menggunakan teknologi modern seperti HTML, CSS, JavaScript, Node.js, dan Express.js. Fokus pada performa dan pengalaman pengguna yang baik.</p>
+          <div class="service-techs"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span></div>
+        </div>
+        <div class="service-card reveal" tabindex="0">
+          <div class="service-icon-wrap software-dev-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <h3 class="service-name">Software Development</h3>
+          <p class="service-desc">Mengembangkan aplikasi desktop dan perangkat lunak menggunakan Java dengan prinsip Object-Oriented Programming. Fokus pada arsitektur yang bersih, terstruktur, dan mudah di-maintain.</p>
+          <div class="service-techs"><span>Java</span><span>OOP</span><span>Java Swing</span><span>JDBC</span></div>
+        </div>
+        <div class="service-card reveal" tabindex="0">
+          <div class="service-icon-wrap db-dev-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+          <h3 class="service-name">Database Development</h3>
+          <p class="service-desc">Merancang dan mengelola basis data relasional menggunakan MySQL dan SQL. Berpengalaman dalam desain skema, query, dan integrasi database ke dalam aplikasi.</p>
+          <div class="service-techs"><span>MySQL</span><span>SQL</span><span>XAMPP</span><span>Database Design</span></div>
+        </div>
+        <div class="service-card reveal" tabindex="0">
+          <div class="service-icon-wrap uiux-dev-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+          <h3 class="service-name">UI/UX Design</h3>
+          <p class="service-desc">Merancang antarmuka pengguna yang intuitif, menarik, dan fungsional menggunakan Figma. Memperhatikan user flow, wireframing, prototyping, dan konsistensi desain untuk mobile maupun web.</p>
+          <div class="service-techs"><span>Figma</span><span>Wireframing</span><span>Prototyping</span><span>Mobile Design</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Journey Section -->
+  <section id="journey" class="section section-alt" aria-label="Learning journey">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// journey.log</span>
+        <h2 class="section-title">My Learning <span class="gradient-text">Journey</span></h2>
+        <p class="section-subtitle">The roadmap of my growth as a developer</p>
+      </div>
+      <div class="journey-container">
+        <div class="journey-line" aria-hidden="true"></div>
+        <div class="journey-items">
+          <div class="journey-item left reveal">
+            <div class="journey-content"><div class="journey-step-num">01</div><h3>Programming Fundamentals</h3><p>Memulai perjalanan dengan mempelajari dasar-dasar pemrograman, logika algoritma, struktur data, dan cara berpikir seperti seorang programmer menggunakan Java.</p><div class="journey-tags"><span>Java</span><span>Algorithms</span><span>Data Structures</span></div></div>
+            <div class="journey-dot" aria-hidden="true"><span>&#128187;</span></div>
+          </div>
+          <div class="journey-item right reveal">
+            <div class="journey-dot" aria-hidden="true"><span>&#128311;</span></div>
+            <div class="journey-content"><div class="journey-step-num">02</div><h3>Object-Oriented Programming</h3><p>Memperdalam pemahaman OOP — enkapsulasi, pewarisan, polimorfisme, dan abstraksi. Menerapkan prinsip SOLID dalam pengembangan aplikasi desktop.</p><div class="journey-tags"><span>OOP</span><span>SOLID</span><span>Java</span></div></div>
+          </div>
+          <div class="journey-item left reveal">
+            <div class="journey-content"><div class="journey-step-num">03</div><h3>Database Management</h3><p>Belajar merancang basis data relasional, menulis query SQL yang efisien, dan mengintegrasikan database ke dalam aplikasi menggunakan JDBC dan MySQL.</p><div class="journey-tags"><span>MySQL</span><span>SQL</span><span>JDBC</span><span>XAMPP</span></div></div>
+            <div class="journey-dot" aria-hidden="true"><span>&#128451;</span></div>
+          </div>
+          <div class="journey-item right reveal">
+            <div class="journey-dot" aria-hidden="true"><span>&#127760;</span></div>
+            <div class="journey-content"><div class="journey-step-num">04</div><h3>Web Development</h3><p>Membangun aplikasi web dari frontend (HTML, CSS, JavaScript) hingga backend (Node.js, Express.js). Mengonsumsi REST API eksternal dan membangun sendiri.</p><div class="journey-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Node.js</span><span>REST API</span></div></div>
+          </div>
+          <div class="journey-item left reveal">
+            <div class="journey-content"><div class="journey-step-num">05</div><h3>Artificial Intelligence</h3><p>Mengeksplorasi dunia machine learning dan AI — mulai dari preprocessing dataset gambar, membangun model sederhana dengan TensorFlow, hingga eksperimen di Google Colab.</p><div class="journey-tags"><span>Python</span><span>TensorFlow</span><span>NumPy</span><span>Colab</span></div></div>
+            <div class="journey-dot" aria-hidden="true"><span>&#129302;</span></div>
+          </div>
+          <div class="journey-item right reveal">
+            <div class="journey-dot" aria-hidden="true"><span>&#127912;</span></div>
+            <div class="journey-content"><div class="journey-step-num">06</div><h3>UI/UX Design</h3><p>Belajar prinsip desain UI/UX — dari riset pengguna, wireframing, hingga membuat prototype interaktif di Figma. Fokus pada mobile-first design dan pengalaman pengguna.</p><div class="journey-tags"><span>Figma</span><span>Prototyping</span><span>Mobile Design</span></div></div>
+          </div>
+          <div class="journey-item left reveal">
+            <div class="journey-content"><div class="journey-step-num">07</div><h3>Software Dev Practices</h3><p>Menerapkan praktik pengembangan perangkat lunak yang profesional — version control dengan Git/GitHub, project management, dan dokumentasi yang baik.</p><div class="journey-tags"><span>Git</span><span>GitHub</span><span>Documentation</span></div></div>
+            <div class="journey-dot" aria-hidden="true"><span>&#9881;</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// contact.sh</span>
+        <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+        <p class="section-subtitle">Interested in working together or just want to say hello? Feel free to contact me.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-info-item">
+            <div class="contact-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><span class="contact-label">Email</span><a href="mailto:pandueman7@gmail.com" class="contact-value">pandueman7@gmail.com</a></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></div>
+            <div><span class="contact-label">GitHub</span><a href="https://github.com/eman-spec" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/eman-spec</a></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></div>
+            <div><span class="contact-label">Instagram</span><a href="https://instagram.com/odeyytz_" target="_blank" rel="noopener noreferrer" class="contact-value">@odeyytz_</a></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+            <div><span class="contact-label">LinkedIn</span><a href="https://linkedin.com/in/odeyytz_" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/odeyytz_</a></div>
+          </div>
+          <div class="contact-quote">
+            <blockquote>"Code is poetry, and I'm learning to write beautiful verses every day."</blockquote>
+            <cite>— Soleeman</cite>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form id="contactForm" class="contact-form" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="contactName">Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Your name" required autocomplete="name" />
+              <span class="form-error" id="nameError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required autocomplete="email" />
+              <span class="form-error" id="emailError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+              <span class="form-error" id="messageError" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Pesan berhasil dikirim! Terima kasih
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo" aria-label="Go to home"><span class="logo-bracket">&lt;</span>SFO<span class="logo-bracket">/&gt;</span></a>
+          <p>Mahasiswa Teknik Informatika yang passionate di bidang software &amp; web development.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="footer-social-links">
+            <a href="https://github.com/eman-spec" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+            <a href="https://instagram.com/odeyytz_" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+            <a href="https://linkedin.com/in/odeyytz_" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="mailto:pandueman7@gmail.com" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&#169; 2026 Soleeman Firdaus Ode. Built with passion and code.</p>
+        <p class="footer-tech">HTML &middot; CSS &middot; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
