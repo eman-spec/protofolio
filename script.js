@@ -10,14 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
     loader.classList.add('hidden');
     document.body.style.overflow = 'visible';
     initAnimations();
-  }, 3400);
+  }, 2800);
 
   document.body.style.overflow = 'hidden';
 
   /* ── NAVBAR ────────────────────────────── */
-  const navbar    = document.getElementById('navbar');
+  const navbar = document.getElementById('navbar');
   const hamburger = document.getElementById('hamburger');
-  const navLinks  = document.getElementById('navLinks');
+  const navLinks = document.getElementById('navLinks');
   const allNavLinks = document.querySelectorAll('.nav-link');
 
   window.addEventListener('scroll', () => {
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section[id]');
     let current = '';
     sections.forEach(section => {
-      const sectionTop    = section.offsetTop - 100;
+      const sectionTop = section.offsetTop - 100;
       const sectionHeight = section.offsetHeight;
       if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
         current = section.getAttribute('id');
@@ -75,9 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── THEME TOGGLE ──────────────────────── */
   const themeToggle = document.getElementById('themeToggle');
-  const body        = document.getElementById('body');
-  const iconMoon    = themeToggle.querySelector('.icon-moon');
-  const iconSun     = themeToggle.querySelector('.icon-sun');
+  const body = document.getElementById('body');
+  const iconMoon = themeToggle.querySelector('.icon-moon');
+  const iconSun = themeToggle.querySelector('.icon-sun');
 
   const savedTheme = localStorage.getItem('theme') || 'dark';
   applyTheme(savedTheme);
@@ -94,12 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
       body.classList.remove('dark-mode');
       body.classList.add('light-mode');
       iconMoon.style.display = 'none';
-      iconSun.style.display  = 'block';
+      iconSun.style.display = 'block';
     } else {
       body.classList.remove('light-mode');
       body.classList.add('dark-mode');
       iconMoon.style.display = 'block';
-      iconSun.style.display  = 'none';
+      iconSun.style.display = 'none';
     }
   }
 
@@ -112,10 +112,10 @@ document.addEventListener('DOMContentLoaded', () => {
     'UI/UX Designer',
     'IT Student',
   ];
-  let roleIdx  = 0;
-  let charIdx  = 0;
+  let roleIdx = 0;
+  let charIdx = 0;
   let deleting = false;
-  let delay    = 100;
+  let delay = 100;
 
   function typeRole() {
     const current = roles[roleIdx];
@@ -133,8 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
       delay = 50;
       if (charIdx === 0) {
         deleting = false;
-        roleIdx  = (roleIdx + 1) % roles.length;
-        delay    = 400;
+        roleIdx = (roleIdx + 1) % roles.length;
+        delay = 400;
       }
     }
     setTimeout(typeRole, delay);
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
         width: ${size}px;
         height: ${size}px;
         left: ${Math.random() * 100}%;
-        background: ${Math.random() > 0.6 ? 'rgba(139,92,246,0.35)' : Math.random() > 0.5 ? 'rgba(59,130,246,0.25)' : 'rgba(34,211,238,0.15)'};
+        background: ${Math.random() > 0.5 ? 'rgba(99,102,241,0.4)' : 'rgba(34,211,238,0.3)'};
         animation-duration: ${Math.random() * 12 + 8}s;
         animation-delay: ${Math.random() * 10}s;
       `;
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── SCROLL REVEAL ─────────────────────── */
   function initAnimations() {
     const revealEls = document.querySelectorAll('.reveal');
-    const observer  = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
           setTimeout(() => {
@@ -214,15 +214,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ── CONTACT FORM ──────────────────────── */
-  const contactForm  = document.getElementById('contactForm');
-  const nameInput    = document.getElementById('contactName');
-  const emailInput   = document.getElementById('contactEmail');
-  const msgInput     = document.getElementById('contactMessage');
-  const nameError    = document.getElementById('nameError');
-  const emailError   = document.getElementById('emailError');
+  const contactForm = document.getElementById('contactForm');
+  const nameInput = document.getElementById('contactName');
+  const emailInput = document.getElementById('contactEmail');
+  const msgInput = document.getElementById('contactMessage');
+  const nameError = document.getElementById('nameError');
+  const emailError = document.getElementById('emailError');
   const messageError = document.getElementById('messageError');
-  const formSuccess  = document.getElementById('formSuccess');
-  const submitBtn    = document.getElementById('submitBtn');
+  const formSuccess = document.getElementById('formSuccess');
+  const submitBtn = document.getElementById('submitBtn');
 
   function validateEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -268,15 +268,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="animation: spin 1s linear infinite;">
           <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
         </svg>
-        Membuka WhatsApp...
+        Sending...
       `;
-
-      const nameVal = nameInput.value.trim();
-      const emailVal = emailInput.value.trim();
-      const msgVal = msgInput.value.trim();
-      const waText = encodeURIComponent(`Halo Soleeman, nama saya ${nameVal} (${emailVal}).\n\n${msgVal}`);
-      const waUrl = `https://wa.me/6281240473258?text=${waText}`;
-
+      // Simulate send
       setTimeout(() => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = `
@@ -285,28 +279,26 @@ document.addEventListener('DOMContentLoaded', () => {
           </svg>
           Send Message
         `;
-        formSuccess.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Mengarahkan ke WhatsApp...`;
         formSuccess.classList.add('show');
-        window.open(waUrl, '_blank');
         contactForm.reset();
         setTimeout(() => formSuccess.classList.remove('show'), 5000);
-      }, 600);
+      }, 1800);
     }
   });
 
   /* ── SKILL CARD HOVER GLOW ─────────────── */
   document.querySelectorAll('.skill-card').forEach(card => {
-    card.addEventListener('mouseenter', function(e) {
+    card.addEventListener('mouseenter', function (e) {
       this.style.boxShadow = 'var(--shadow-glow)';
     });
-    card.addEventListener('mouseleave', function() {
+    card.addEventListener('mouseleave', function () {
       this.style.boxShadow = '';
     });
   });
 
   /* ── PROJECT CARD TILT EFFECT ──────────── */
   document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mousemove', function(e) {
+    card.addEventListener('mousemove', function (e) {
       const rect = this.getBoundingClientRect();
       const x = e.clientX - rect.left - rect.width / 2;
       const y = e.clientY - rect.top - rect.height / 2;
@@ -314,7 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const rotY = (x / rect.width) * 6;
       this.style.transform = `translateY(-6px) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
     });
-    card.addEventListener('mouseleave', function() {
+    card.addEventListener('mouseleave', function () {
       this.style.transform = '';
     });
   });
@@ -354,9 +346,9 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(progressBar);
 
   window.addEventListener('scroll', () => {
-    const scrollTop  = document.documentElement.scrollTop;
+    const scrollTop = document.documentElement.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const progress   = (scrollTop / scrollHeight) * 100;
+    const progress = (scrollTop / scrollHeight) * 100;
     progressBar.style.width = `${progress}%`;
   }, { passive: true });
 
@@ -393,10 +385,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cvBtn.addEventListener('click', (e) => {
       if (cvBtn.getAttribute('href') === '#' || !cvBtn.getAttribute('href')) {
         e.preventDefault();
-        showToast('Mengarahkan ke WhatsApp untuk meminta CV...');
-        setTimeout(() => {
-          window.open('https://wa.me/6281240473258?text=Halo%20Soleeman%2C%20saya%20ingin%20meminta%20file%20CV%20Anda.', '_blank');
-        }, 600);
+        showToast('CV akan segera tersedia! Hubungi saya di pandueman7@gmail.com.');
       }
     });
   }
