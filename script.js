@@ -268,9 +268,15 @@ document.addEventListener('DOMContentLoaded', () => {
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="animation: spin 1s linear infinite;">
           <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
         </svg>
-        Sending...
+        Membuka WhatsApp...
       `;
-      // Simulate send
+
+      const nameVal = nameInput.value.trim();
+      const emailVal = emailInput.value.trim();
+      const msgVal = msgInput.value.trim();
+      const waText = encodeURIComponent(`Halo Soleeman, nama saya ${nameVal} (${emailVal}).\n\n${msgVal}`);
+      const waUrl = `https://wa.me/6281240473258?text=${waText}`;
+
       setTimeout(() => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = `
@@ -279,10 +285,12 @@ document.addEventListener('DOMContentLoaded', () => {
           </svg>
           Send Message
         `;
+        formSuccess.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Mengarahkan ke WhatsApp...`;
         formSuccess.classList.add('show');
+        window.open(waUrl, '_blank');
         contactForm.reset();
         setTimeout(() => formSuccess.classList.remove('show'), 5000);
-      }, 1800);
+      }, 600);
     }
   });
 
@@ -385,7 +393,10 @@ document.addEventListener('DOMContentLoaded', () => {
     cvBtn.addEventListener('click', (e) => {
       if (cvBtn.getAttribute('href') === '#' || !cvBtn.getAttribute('href')) {
         e.preventDefault();
-        showToast('CV akan segera tersedia! Hubungi saya di pandueman7@gmail.com.');
+        showToast('Mengarahkan ke WhatsApp untuk meminta CV...');
+        setTimeout(() => {
+          window.open('https://wa.me/6281240473258?text=Halo%20Soleeman%2C%20saya%20ingin%20meminta%20file%20CV%20Anda.', '_blank');
+        }, 600);
       }
     });
   }

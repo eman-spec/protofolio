@@ -246,6 +246,34 @@ img, svg { display: block; }
   transform: translateY(-3px);
 }
 
+/* ── FLOATING WHATSAPP BUTTON ────── */
+.wa-float {
+  position: fixed;
+  bottom: 28px;
+  left: 28px;
+  z-index: 500;
+  height: 46px;
+  padding: 0 18px 0 14px;
+  border-radius: 100px;
+  background: #25d366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 13.5px;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.wa-float:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.6);
+  background: #20ba5a;
+  color: #ffffff;
+}
+
 /* ── NAVBAR ───────────────────────── */
 .navbar {
   position: fixed;
