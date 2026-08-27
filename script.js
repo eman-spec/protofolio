@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
         width: ${size}px;
         height: ${size}px;
         left: ${Math.random() * 100}%;
-        background: ${Math.random() > 0.5 ? 'rgba(37,99,235,0.5)' : 'rgba(0,240,255,0.4)'};
+        background: ${Math.random() > 0.5 ? 'rgba(16,185,129,0.5)' : 'rgba(0,255,157,0.4)'};
         animation-duration: ${Math.random() * 12 + 8}s;
         animation-delay: ${Math.random() * 10}s;
       `;
