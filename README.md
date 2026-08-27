@@ -10,6 +10,7 @@ Website portofolio modern, responsif, dan interaktif untuk mahasiswa Teknik Info
 - **Kampus:** Universitas Nusaputra
 - **Fokus:** Software Development, Web Development, Database, dan UI/UX
 - **Email:** pandueman7@gmail.com
+- **Telepon / WhatsApp:** [081240473258](https://wa.me/6281240473258)
 - **GitHub:** [eman-spec](https://github.com/eman-spec)
 - **Instagram:** [@odeyytz_](https://instagram.com/odeyytz_)
 - **LinkedIn:** [odeyytz_](https://linkedin.com/in/odeyytz_)
