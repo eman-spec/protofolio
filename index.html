@@ -17,26 +17,26 @@
 </head>
 <body class="dark-mode" id="body">
 
-  <!-- Loading Screen -->
-  <div id="loader" class="loader">
+  <!-- Cinematic Opening Loader -->
+  <div id="loader" class="loader" role="status" aria-label="Loading portfolio">
+    <!-- Ambient corner lights -->
+    <div class="loader-light-tl" aria-hidden="true"></div>
+    <div class="loader-light-br" aria-hidden="true"></div>
+    <!-- Subtle grid -->
+    <div class="loader-grid" aria-hidden="true"></div>
+    <!-- Central radial glow -->
+    <div class="loader-glow" aria-hidden="true"></div>
+    <!-- Main cinematic text content -->
     <div class="loader-content">
-      <div class="loader-terminal">
-        <div class="terminal-bar">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-          <span class="terminal-title">init.sh</span>
-        </div>
-        <div class="terminal-body">
-          <p class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">Initializing portfolio...</span></p>
-          <p class="t-line delay-1"><span class="t-prompt">$ </span><span class="t-cmd">Loading modules...</span></p>
-          <p class="t-line delay-2"><span class="t-prompt">$ </span><span class="t-cmd">Setting up environment...</span></p>
-          <p class="t-line delay-3"><span class="t-prompt">✔ </span><span class="t-cmd t-success">Ready! Welcome 🚀</span></p>
-        </div>
+      <div class="loader-dot" aria-hidden="true"></div>
+      <div class="loader-name">
+        <span class="name-highlight">Soleeman</span>
       </div>
-      <div class="loader-bar-wrap">
-        <div class="loader-bar"></div>
-      </div>
+      <div class="loader-subtitle">Informatics Engineering Student</div>
+    </div>
+    <!-- Bottom progress bar -->
+    <div class="loader-bar-wrap" aria-hidden="true">
+      <div class="loader-bar"></div>
     </div>
   </div>
 
@@ -208,8 +208,8 @@
                 <ellipse cx="50" cy="80" rx="32" ry="20" fill="url(#avatarGrad)"/>
                 <defs>
                   <linearGradient id="avatarGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-                    <stop offset="0%" stop-color="#2563eb"/>
-                    <stop offset="100%" stop-color="#00f0ff"/>
+                    <stop offset="0%" stop-color="#8B5CF6"/>
+                    <stop offset="100%" stop-color="#3B82F6"/>
                   </linearGradient>
                 </defs>
               </svg>

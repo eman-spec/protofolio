@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loader.classList.add('hidden');
     document.body.style.overflow = 'visible';
     initAnimations();
-  }, 2800);
+  }, 3400);
 
   document.body.style.overflow = 'hidden';
 
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
         width: ${size}px;
         height: ${size}px;
         left: ${Math.random() * 100}%;
-        background: ${Math.random() > 0.5 ? 'rgba(37,99,235,0.5)' : 'rgba(0,240,255,0.4)'};
+        background: ${Math.random() > 0.6 ? 'rgba(139,92,246,0.35)' : Math.random() > 0.5 ? 'rgba(59,130,246,0.25)' : 'rgba(34,211,238,0.15)'};
         animation-duration: ${Math.random() * 12 + 8}s;
         animation-delay: ${Math.random() * 10}s;
       `;
